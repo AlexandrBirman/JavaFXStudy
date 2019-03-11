@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
-<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="99.9999915527369" prefWidth="413.999977929685" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="99.9999915527369" prefWidth="413.999977929685" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
   <center>
     <VBox minWidth="194.0" prefHeight="60.0" prefWidth="199.0">
       <children>
-        <TextField prefWidth="200.0">
+        <TextField fx:id="txtFIO" prefWidth="200.0">
           <VBox.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
           </VBox.margin>
         </TextField>
-        <TextField prefWidth="200.0" VBox.margin="$x1" />
+        <TextField fx:id="txtPhone" prefWidth="200.0" VBox.margin="$x1" />
       </children>
       <BorderPane.margin>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" fx:id="x2" />
@@ -26,8 +26,8 @@
   <left>
     <VBox prefHeight="60.0" prefWidth="70.0" BorderPane.margin="$x2">
       <children>
-        <Label text="ФИО" VBox.margin="$x1" />
-        <Label text="Телефон">
+        <Label fx:id="labelFIO" text="ФИО" VBox.margin="$x1" />
+        <Label fx:id="labelPhone" text="Телефон">
           <VBox.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
           </VBox.margin>
@@ -38,8 +38,8 @@
   <right>
     <VBox prefHeight="60.0" prefWidth="100.0">
       <children>
-        <Button mnemonicParsing="false" prefWidth="95.0" text="ОК" VBox.margin="$x1" />
-        <Button mnemonicParsing="false" prefWidth="90.0" text="Отмена" VBox.margin="$x1" />
+        <Button fx:id="btnOK" mnemonicParsing="false" prefWidth="95.0" text="ОК" VBox.margin="$x1" />
+        <Button fx:id="btnCancel" mnemonicParsing="false" prefWidth="90.0" text="Отмена" VBox.margin="$x1" />
       </children>
       <BorderPane.margin>
         <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
