@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<BorderPane id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="99.9999915527369" prefWidth="413.999977929685" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <center>
+    <VBox minWidth="194.0" prefHeight="60.0" prefWidth="199.0">
+      <children>
+        <TextField prefWidth="200.0">
+          <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+          </VBox.margin>
+        </TextField>
+        <TextField prefWidth="200.0" VBox.margin="$x1" />
+      </children>
+      <BorderPane.margin>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" fx:id="x2" />
+      </BorderPane.margin>
+    </VBox>
+  </center>
+  <left>
+    <VBox prefHeight="60.0" prefWidth="70.0" BorderPane.margin="$x2">
+      <children>
+        <Label text="ФИО" VBox.margin="$x1" />
+        <Label text="Телефон">
+          <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+          </VBox.margin>
+        </Label>
+      </children>
+    </VBox>
+  </left>
+  <right>
+    <VBox prefHeight="60.0" prefWidth="100.0">
+      <children>
+        <Button mnemonicParsing="false" prefWidth="95.0" text="ОК" VBox.margin="$x1" />
+        <Button mnemonicParsing="false" prefWidth="90.0" text="Отмена" VBox.margin="$x1" />
+      </children>
+      <BorderPane.margin>
+        <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+      </BorderPane.margin>
+    </VBox>
+  </right>
+</BorderPane>
