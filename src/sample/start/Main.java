@@ -1,4 +1,4 @@
-package sample;
+package sample.start;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("fxml/main.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Facebook");
         primaryStage.setMinHeight(600);
         primaryStage.setMinWidth(400);
         primaryStage.setScene(new Scene(root, 300, 275));
