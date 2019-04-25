@@ -51,8 +51,8 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
           </columnResizePolicy>
           <columns>
-            <TableColumn prefWidth="92.0" text="ФИО" fx:id="nameColumn" />
-            <TableColumn prefWidth="107.0" text="Телефон" fx:id="phoneName" />
+            <TableColumn prefWidth="92.0" text="ФИО" fx:id="columnFIO" />
+            <TableColumn prefWidth="107.0" text="Телефон" fx:id="columnPhone" />
           </columns>
         </TableView>
       </children>

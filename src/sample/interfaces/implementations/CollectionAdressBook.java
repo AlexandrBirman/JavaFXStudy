@@ -1,16 +1,17 @@
 package sample.interfaces.implementations;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import sample.interfaces.AdressBook;
 import sample.objects.Person;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class CollectionAdressBook implements AdressBook{
 
-    private List<Person> personList = new ArrayList<>();
+    private ObservableList<Person> personList = FXCollections.observableArrayList();
 
-    public List<Person> getPersonList() {
+    public ObservableList<Person> getPersonList() {
         return personList;
     }
 
